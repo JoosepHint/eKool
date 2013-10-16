@@ -189,6 +189,7 @@ public class Login extends SherlockActivity {
 				        imm.toggleSoftInput(InputMethodManager.HIDE_IMPLICIT_ONLY, 0);
 				user = username.getText().toString();
 				pass = password.getText().toString();
+				{
 			    th = new Thread(new Runnable() {
 			        public void run() {
 			            try {
@@ -223,7 +224,7 @@ public class Login extends SherlockActivity {
 						fos.close();
 						response.getEntity().consumeContent();
 					   if(!(html2.length() == 0)){
-						if (html2.contains("ebaõnnestus")) {//Kui on vale parool/kasutajanimi
+						if (html2.contains("ebaï¿½nnestus")) {//Kui on vale parool/kasutajanimi
 							failed = true;
 						} else {
 							if(auto.isChecked() && remember.isChecked()){
@@ -243,7 +244,7 @@ public class Login extends SherlockActivity {
 					if (failed == true) {
 						Login.this.runOnUiThread(new Runnable() {
 						    public void run() {
-								fail.setText("eKooli sisse logimine ebaõnnestus!");
+								fail.setText("eKooli sisse logimine ebaï¿½nnestus!");
 								loading.setVisibility(View.GONE);
 						    }
 						});
@@ -270,10 +271,10 @@ public class Login extends SherlockActivity {
 		            	 String add2 = ele2.text();
 		            	 School.add(add2);
 		             }
-					if(elem.isEmpty()){//Kui ei ole lisatud ühtegi kasutajat
+					if(elem.isEmpty()){//Kui ei ole lisatud ï¿½htegi kasutajat
 						Login.this.runOnUiThread(new Runnable() {
 						    public void run() {
-								Toast.makeText(getBaseContext(), "Sul ei ole veel üheski koolis kasutusõigust, tee arvuti eKoolis kooli taotlus ja proovi hiljem uuesti!", Toast.LENGTH_LONG).show();
+								Toast.makeText(getBaseContext(), "Sul ei ole veel ï¿½heski koolis kasutusï¿½igust, tee arvuti eKoolis kooli taotlus ja proovi hiljem uuesti!", Toast.LENGTH_LONG).show();
 								loading.setVisibility(View.GONE);
 						    }
 						});
@@ -282,7 +283,7 @@ public class Login extends SherlockActivity {
 						school = (elem2.get(0).text());
 					preferences.put("pupil_name", title);
 					preferences.put("pupil_school", school);
-		             final String[] name = Name.toArray(new String[Name.size()]);//Kõik kasutajate nimed
+		             final String[] name = Name.toArray(new String[Name.size()]);//Kï¿½ik kasutajate nimed
 		             final String[] school = School.toArray(new String[School.size()]);//Koolide nimed
 		             final String[] links = Links.toArray(new String[Links.size()]);//Lingid Kasutajate eKoolidesse
 						Intent i = new Intent(Login.this, MainActivity.class);
@@ -295,14 +296,14 @@ public class Login extends SherlockActivity {
 					}else{
 						Login.this.runOnUiThread(new Runnable() {
 						    public void run() {
-								fail.setText("Internetiühendus Puudub!");//Pole interneti ja andmed kust laadida
+								fail.setText("Internetiï¿½hendus Puudub!");//Pole interneti ja andmed kust laadida
 								loading.setVisibility(View.GONE);
 						    }
 						});
 					}
 					}
 				}else{
-			        if(input.exists() && preferences.getBool("offline") == true){//Logi Sisse võrguta
+			        if(input.exists() && preferences.getBool("offline") == true){//Logi Sisse vï¿½rguta
 			        try {
 						doc = Jsoup.parse(input, "UTF-8", "http://example.com/");
 			        Elements elem = doc.select("DIV.name");
@@ -350,7 +351,7 @@ public class Login extends SherlockActivity {
 				}else{
 		    		Login.this.runOnUiThread(new Runnable() {
 					    public void run() {
-					Toast.makeText(getBaseContext(), "Kahjuks ei saa eKooli internetita vaadata!(Kontrolli seadete menüüst, kas võrguta eKool on võimaldatud)", Toast.LENGTH_LONG).show();
+					Toast.makeText(getBaseContext(), "Kahjuks ei saa eKooli internetita vaadata!(Kontrolli seadete menï¿½ï¿½st, kas vï¿½rguta eKool on vï¿½imaldatud)", Toast.LENGTH_LONG).show();
 					loading.setVisibility(View.GONE);
 					    }
 		    		});
