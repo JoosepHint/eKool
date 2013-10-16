@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/datelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_upper_background"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="text"
+                android:textColor="#ffffff"
+                android:textSize="15.0dip" />
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_background"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="4dp"
+            android:orientation="vertical" >
+            <RelativeLayout
+    android:id="@+id/layout"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:background="@drawable/grade_background"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textColor="#ff000000"
+        android:textSize="25.0dip"
+        android:textStyle="bold" />
+</RelativeLayout>
+
+        <TextView
+            android:id="@+id/grade_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/option_text"
+            android:layout_alignTop="@+id/layout"
+            android:text="Lessons"
+            android:textColor="#ff000000"
+            android:textSize="15.0dip" />
+
+        <TextView
+            android:id="@+id/option_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/grade_type"
+            android:layout_marginLeft="17dp"
+            android:layout_toRightOf="@+id/layout"
+            android:text="Grades"
+            android:textSize="15.0dip"
+            android:textStyle="bold" />
+
+</RelativeLayout>
+</LinearLayout>

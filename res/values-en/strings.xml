@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string name="app_name">eKool</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_news">News</string>
+    <string name="welcome">Welcome to eSchool!</string>
+    <string name="please">Please Log in!</string>
+    <string name="grades">Grades</string>
+    <string name="exercise">Exercises</string>
+    <string name="distsipline">Distsipline</string>
+    <string name="news">News</string>
+    <string name="full">Web-View</string>
+    <string name="grade">Grade</string>
+    <string name="title_activity_main">MainActivit</string>
+    <string name="rememberme">Remember Me</string>
+    <string name="automatic">Log me in automatically</string>
+    <string name="pupilname">Pupil Name</string>
+    <string name="pupilschool">School</string>
+    <string name="exit">Exit App</string>
+    <string name="logout">Log Out</string>
+        <string name="syncing">Enable Notifications</string>
+    <string name="syncsummary">Unfortunately notifications doesn´t work yet!</string>
+        <string name="username">Username</string>
+                <string name="login">Log in</string>
+                <string name="logoffline">Logi In Offline</string>
+    <string name="password">Password</string>
+    <string name="title_activity_about">About</string>
+    <string name="refresh">Refresh</string>
+    <string name="settings">Settings</string>
+    <string name="syncrate">Synchronization frequency</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="nointernet">No Internet Connection!</string>
+    <string name="logging">Logging in...</string>
+    <string name="offlineschool">Enable offline eSchool</string>
+    <string name="failedffs">Failed to log into eSchool</string>
+    <!-- Strings related to Settings -->
+
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General Settings</string>
+
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_title_sync_frequency">Grade synchronization frequency</string>
+
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 Hour</item>
+        <item>2 Hours</item>
+        <item>3 Hours</item>
+        <item>6 Hours</item>
+    </string-array>
+        <string name="pref_header_notifications">Notifications</string>
+</resources>

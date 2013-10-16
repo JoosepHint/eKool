@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="Üldised Seaded" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="checkboxPref"
+            android:title="@string/offlineschool" />
+    <ListPreference
+        android:defaultValue="et_EE"
+        android:entries="@array/pref_lang_frequency_titles"
+        android:entryValues="@array/pref_lang_frequency_values"
+        android:key="lang_frequency"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null" android:title="@string/language"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_header_notifications" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:enabled="true"
+            android:key="checkboxPref2"
+            android:title="@string/syncing" />
+
+    <ListPreference
+        android:defaultValue="3600000"
+        android:entries="@array/pref_sync_frequency_titles"
+        android:entryValues="@array/pref_sync_frequency_values"
+        android:key="sync_frequency"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null" android:title="@string/syncrate" android:summary="Kui tihti uut hinnet kontrollida. NB! Mida tihedamini toimub sünkroonimine, seda rohkem kulub akut."/>
+    </PreferenceCategory>
+
+</PreferenceScreen>
