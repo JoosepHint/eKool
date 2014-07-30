@@ -1,11 +1,19 @@
 eKool
 =====
 
-JHapps eKool´i rakendus 
+JHapps eKool´i rakendus. 
 
-Play Store - https://play.google.com/store/apps/details?id=com.JHapps.eKool&hl=en
+Kood on kohutav, kuid töötab küll, seda ümber teha pole mõtet, lihtsam oleks siis uus rakendus teha.
+
+Play Store link - https://play.google.com/store/apps/details?id=com.JHapps.eKool
 
 
+
+Litsents
+
+=====
+
+Lihtsalt öeldes tee mida tahad, kuid võiks ära mainida kui see kood on kuidagi aidanud ;)
 
 
 
